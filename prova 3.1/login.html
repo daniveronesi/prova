@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>TodoList</title>
+  <link rel="shortcut icon" href="img/todoListFavicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="app">
+    
+    <div class="center">
+     <img src="GitHub-Logo.png" alt="GitHub-Logo"width="345">
+    </div>
+    
+
+   
+    <div id="auth" class="center">
+    
+      <form id="authForm">
+        <h3 id="authFormTitle">Acesse a sua conta para continuar</h3>
+
+        <img src="email-line-icon-png.webp" alt="email" width="20">
+        <label for="email">E-mail: </label>
+        <input type="email" placeholder="E-mail" id="email">
+    
+        <img src="password-icon-in-trendy-design-style-free-vector.jpg" alt="senha" width="20">
+        <label for="password">Senha: </label>
+        <input type="password" placeholder="Senha" id="password">
+
+        <button type="submit" id="submitAuthForm">Acessar</button>
+      </form>
+
+     
+      <p id="register">
+        <img src="alphabet-150787_1280.webp" alt="falso-icon"width="10">
+        Não possui uma conta?
+        <button onclick="toggleToRegister()" class="alternative">Cadastrar uma nova conta</button>
+      </p>
+
+      <p id="access" class="startHidden">
+        <img src="pngtree-green-check-mark-ok-sign-png-image_9243317.png" alt="correto-icon"width="10">
+        Já possui uma conta?
+        <button onclick="toggleToAccess()" class="alternative">Acesse a sua conta</button>
+      </p>
+    </div>
+    
+  <script src="js/utils.js"></script>
+  <script src="js/firebase.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
